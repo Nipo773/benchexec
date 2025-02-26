@@ -78,8 +78,8 @@ class VcloudBenchmarkBase(benchexec.benchexec.BenchExec):
             help="Allows the usage of cgroups inside the execution environment. This is useful e.g. if a tool wants to make use of resource limits for subprocesses it spawns.",
         )
         vcloud_args.add_argument(
-            "--no-tmpfs",
-            dest="noTmpfs",
+            "--no-cloud-tmpfs",
+            dest="noCloudTmpfs",
             action="store_true",
             help="Store temporary files (e.t., tool output files) on the actual file system instead of a tmpfs (\"RAM disk\") that is included in the memory limit.",
         )

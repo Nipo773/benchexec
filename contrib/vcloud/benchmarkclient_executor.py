@@ -161,8 +161,8 @@ def execute_benchmark(benchmark, output_handler):
             cmdLine.extend(["--zip-result-files", str(benchmark.config.zipResultFiles)])
         if benchmark.config.cgroupAccess:
             cmdLine.extend(["--cgroupAccess", str(benchmark.config.cgroupAccess)])
-        if benchmark.config.noTmpfs:
-            cmdLine.extend(["--no-tmpfs", str(benchmark.config.noTmpfs)])
+        if benchmark.config.noCloudTmpfs:
+            cmdLine.extend(["--no-tmpfs", str(benchmark.config.noCloudTmpfs)])
         if benchmark.config.tryLessMemory:
             cmdLine.extend(["--try-less-memory", str(benchmark.config.tryLessMemory)])
         if benchmark.config.debug:
